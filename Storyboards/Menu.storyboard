@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ad5-qw-aZT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="02v-tz-YVK">
+            <objects>
+                <viewController storyboardIdentifier="MenuVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ad5-qw-aZT" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JGV-aH-tjP"/>
+                        <viewControllerLayoutGuide type="bottom" id="6es-7O-jrG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ace-lw-nRO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="H9h-fa-8V3">
+                                <rect key="frame" x="0.0" y="64" width="100" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5R-dn-wpJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                        <state key="normal" title="First"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcZ-S5-ytJ" userLabel="Second">
+                                        <rect key="frame" x="0.0" y="30" width="100" height="30"/>
+                                        <state key="normal" title="Second"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEz-mE-Ubv" userLabel="Third">
+                                        <rect key="frame" x="0.0" y="60" width="100" height="30"/>
+                                        <state key="normal" title="Third"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FKB-vO-B9S"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H9h-fa-8V3" firstAttribute="top" secondItem="Ace-lw-nRO" secondAttribute="top" constant="64" id="CUH-ah-rdH"/>
+                            <constraint firstItem="H9h-fa-8V3" firstAttribute="leading" secondItem="Ace-lw-nRO" secondAttribute="leading" id="z4n-o7-CfB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FirstButton" destination="b5R-dn-wpJ" id="Aq9-HP-v1m"/>
+                        <outlet property="SecondButton" destination="BcZ-S5-ytJ" id="tAc-nV-sdE"/>
+                        <outlet property="ThirdButton" destination="UEz-mE-Ubv" id="vNr-KD-pmb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WnE-B1-0Z3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194" y="-27"/>
+        </scene>
+    </scenes>
+</document>
